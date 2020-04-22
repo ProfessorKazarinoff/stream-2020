@@ -2,11 +2,17 @@
 
 ## Learn how to install Anaconda on Windows10
 
+ > https://www.anaconda.com/distribution/
+
 ## Created a GitHub Repo for the Stream
+
+ > https://github.com/ProfessorKazarinoff/stream-2020
 
 ## Created local folder and linked the remote repo on GitHub.com to the local folder on our desktop
 
 ## Learn how to install Visual Studio Code (VS Code)
+
+ > https://code.visualstudio.com/download
 
 ## Opened VS Code, modified the .gitignore file and started these contents
 
