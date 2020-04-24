@@ -1,5 +1,7 @@
 # S01-E02 Contents
 
+## Who am I? Why am I doing this?
+
 ## Review where the GitHub Repo for the stream can be found.
 
  > https://github.com/ProfessorKazarinoff/stream-2020
@@ -37,5 +39,7 @@
 ## Install Miniconda on server, set up jupyterhubenv conda env, install jupyter, numpy, pandas, xlrd, matplotlib, sympy, requests, bokeh, altair, jupyter-hub. Save history
 
 ## Try to run JupyterHub for the first time
+
+## Domain Name routing? This takes time
 
 ## Review and Preview Next Episode
