@@ -28,10 +28,14 @@
 
 ## Talk SSH and log into the server over SSH
 
-## Create a non-root sudo user on the server and copy over SSH keys into the non-root sudo user's account, save history
+## Create a non-root sudo user on the server and copy over SSH keys into the non-root sudo user's account, modify ufw firewall, save history
 
 ## Log into the server as non-root sudo user, save history
 
 ## Add history files to git, commit and push
+
+## Install Miniconda on server, set up jupyterhubenv conda env, install jupyter, numpy, pandas, xlrd, matplotlib, sympy, requests, bokeh, altair, jupyter-hub. Save history
+
+## Try to run JupyterHub for the first time
 
 ## Review and Preview Next Episode
