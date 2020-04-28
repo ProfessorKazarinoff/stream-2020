@@ -6,6 +6,12 @@
 
  > https://github.com/ProfessorKazarinoff/stream-2020
 
+## Review the Code of Conduct for the Stream
+
+ > https://github.com/ProfessorKazarinoff/stream-2020/code-of-conduct/code_of_conduct.md
+
+Follows Project Jupyter's Governance Model [https://github.com/jupyter/governance](https://github.com/jupyter/governance)
+
 ## Review what JupyterHub is, the JupyterHub Docs, and the docs we are following in this series.
 
  > https://jupyterhub.readthedocs.io/en/stable/
@@ -35,6 +41,8 @@
 ## Log into the server as non-root sudo user, save history
 
 ## Add history files to git, commit and push
+
+## Decide to do DNS and domain names or install MiniConda, Python Packages, JupyterHub
 
 ## Install Miniconda on server, set up jupyterhubenv conda env, install jupyter, numpy, pandas, xlrd, matplotlib, sympy, requests, bokeh, altair, jupyter-hub. Save history
 
