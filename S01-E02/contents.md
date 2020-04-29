@@ -55,12 +55,10 @@ apt-get -y update && apt-get -y upgrade
 ## Create a non-root sudo user on the server and copy over SSH keys into the non-root sudo user's account, modify ufw firewall, save history
 
 ```
-apt-get -y update && apt-get -y upgrade
-clear
 adduser peter
 usermod -aG sudo peter
 su - peter
-clear
+# exit to leave the peter user and go back to root
 rsync --archive --chown=peter:peter ~/.ssh /home/peter
 ```
 

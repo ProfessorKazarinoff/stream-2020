@@ -21,6 +21,14 @@
  - Install packages and JupyterHub
  - Run JupyterHub
 
+## Decide to do DNS and domain names or install MiniConda, Python Packages, JupyterHub
+
+## Install Miniconda on server, set up jupyterhubenv conda env, install jupyter, numpy, pandas, xlrd, matplotlib, sympy, requests, bokeh, altair, jupyter-hub. Save history
+
+## Try to run JupyterHub for the first time
+
+## Domain Name routing? This takes time
+
 ## Route domain name to server
 
  - in Google Domains, route to Linode DNS servers
