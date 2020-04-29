@@ -8,7 +8,7 @@
 
 ## Review the Code of Conduct for the Stream
 
- > https://github.com/ProfessorKazarinoff/stream-2020/code-of-conduct/code_of_conduct.md
+ > https://github.com/ProfessorKazarinoff/stream-2020/blob/master/code-of-conduct/code_of_conduct.md
 
 Follows Project Jupyter's Governance Model [https://github.com/jupyter/governance](https://github.com/jupyter/governance)
 
