@@ -16,37 +16,26 @@
 
  - SSH Keys
  - Created Server
- - Non-root sudo user, ufw
- - Installed Minconda, create virtual env
- - Install packages and JupyterHub
- - Run JupyterHub
+ - Non-root sudo user, ufw firewall
 
-## Decide to do DNS and domain names or install MiniConda, Python Packages, JupyterHub
-
-## Install Miniconda on server, set up jupyterhubenv conda env, install jupyter, numpy, pandas, xlrd, matplotlib, sympy, requests, bokeh, altair, jupyter-hub. Save history
-
-## Try to run JupyterHub for the first time
-
-## Domain Name routing? This takes time
-
-## Route domain name to server
+## Route domain name to Linode DNS servers
 
  - in Google Domains, route to Linode DNS servers
  - in Linode, route domain name to server IP
  - Wait...
 
-## SSL Cirt
+## Install Miniconda on server, set up jupyterhubenv conda env
 
-certbot
+ - install conda packages: jupyter, numpy, pandas, xlrd, matplotlib, sympy, requests, bokeh, altair, jupyter-hub
 
-## Cookie Secret, Proxy Auth Token, dhparam.pem save history
+## Try to run JupyterHub for the first time
 
-## Run JupyterHub
+## Save history
 
-## Try to log in with SSL
+## Check if Domain name is routing through
 
-## Shut down, save history
+## Shut down server
 
-## Add history files to git, commit and push
+## Add files to git, commit and push
 
 ## Review and Preview Next Episode
