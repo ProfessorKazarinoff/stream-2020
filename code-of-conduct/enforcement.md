@@ -8,7 +8,7 @@ It's used when we respond to an incident to make sure we are consistent and fair
 
 ## The Code of Conduct Committee
 
-All responses to reports of conduct violations will be managed by a Code of Conduct Committee ("the committee"). The Stream-2020 Steering Council is responsible for vetting and appointing the Code of Conduct Committee. During periods where a separate Code of Conduct Committee is not appointed or is not available to handle a code of conduct report promptly, the Stream-2020 Steering Council will serve as the interim Code of Conduct Committee.
+All responses to reports of conduct violations will be managed by a Code of Conduct Committee ("_the committee_"). The Stream-2020 Steering Council is responsible for vetting and appointing the Code of Conduct Committee. During periods where a separate Code of Conduct Committee is not appointed or is not available to handle a code of conduct report promptly, the Stream-2020 Steering Council will serve as the interim Code of Conduct Committee.
 
 If a Code of Conduct report involves a member of the Steering Council or Code of Conduct Committee, that member will not participate in the investigation or any decisions related to that report.
 
@@ -75,8 +75,7 @@ Possible responses may include:
 
  * Taking no further action
    - if we determine no violations have occurred.
-   - if the matter has been resolved publicly while the committee was
-    considering responses.
+   - if the matter has been resolved publicly while the committee was considering responses.
  * Coordinating voluntary mediation: if all involved parties agree, the Committee may facilitate a mediation process as detailed above.
  * Remind publicly, and point out that some behavior/actions/language have been judged inappropriate and why in the current context, or can but hurtful to some people, requesting the community to self-adjust.
  * A private reprimand from the committee to the individual(s) involved. In this case, the group chair will deliver that reprimand to the individual(s) over email, cc'ing the group.
