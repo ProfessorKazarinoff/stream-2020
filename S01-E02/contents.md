@@ -58,7 +58,12 @@ apt-get -y update && apt-get -y upgrade
 adduser peter
 usermod -aG sudo peter
 su - peter
-# exit to leave the peter user and go back to root
+
+# as user peter
+sudo ls -la /root         # then enter password
+exit                      # exit to leave the peter user and go back to root
+
+# as root
 rsync --archive --chown=peter:peter ~/.ssh /home/peter
 ```
 
@@ -80,5 +85,13 @@ sudo apt-get -y update && sudo apt-get -y upgrade
 ```
 
 ## Add files to git, commit and push
+
+Locally -
+
+```
+git add .
+git commit -m "update S01-E02 contents for end of stream"
+git push origin master
+```
 
 ## Review and Preview Next Episode
