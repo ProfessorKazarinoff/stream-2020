@@ -19,10 +19,7 @@
  - Installed Miniconda, created conda env
  - Installed conda packages, JupyterHub
  - Ran JupyterHub in very unsecure fashion
-
-## Check if domain name is going to server IP
-
-## SSL cirt with Certbot
+ - Aquired an SSL cert using Certbot
 
 ## Create files for security
 

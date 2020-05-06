@@ -34,23 +34,88 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Install Miniconda on server, set up jupyterhubenv conda env
 
+ - update the server
+
+```
+sudo apt-get -y update && sudo apt-get -y upgrade
+```
+
  - install miniconda, modify permissions
 
- - create a jupyterhubenv conda environment
+```
+cd /tmp
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sudo bash Miniconda3-latest-Linux-x86_64.sh
+cd ~
+source .bashrc
+cd /opt
+ls -la
+sudo chmod -R g+w miniconda3/
+ls -la
+sudo chown -R root:peter miniconda3/
+ls -la
+conda --version
+```
+
+ - create a jupyterhubenv conda environment and activate it
+
+```
+conda create -y -n jupyterhubenv python=3.7
+conda activate jupyterhubenv
+```
 
  - install conda packages: jupyter, numpy, pandas, xlrd, matplotlib, sympy, requests, bokeh, altair, jupyterhub
 
+```
+conda install -y numpy matplotlib pandas xlrd scipy sympy jupyter notebook bokeh seaborn pyserial requests
+conda install -y -c conda-forge pint altair jupyterlab
+conda install -y -c conda-forge jupyterhub
+```
+
 ## Try to run JupyterHub for the first time
 
- - open port 8000 on the ufw firewall
+ - open port 8000 on the ufw firewall and start JupyterHub with the no-ssl flag
+
+ - browse to http:<server_IP>:8000
+
+```
+sudo ufw status
+sudo ufw allow 8000
+sudo ufw status
+jupyterhub --no-ssl
+# Ctrl-c to terminate
+sudo ufw status
+sudo ufw deny 8000
+sudo ufw status
+```
 
 ## Check if domain name routing is complete
 
-See if the domain name is successfully routed over to Linode
+See if the domain name is successfully routed over to Linode and our server
 
  > https://www.whatsmydns.net/
 
 ## Use Certbot to generate an SSL certificut
+
+ - install and run Certbot
+
+```
+sudo ufw status
+sudo ufw allow 80
+sudo ufw status
+cd ~
+mkdir certbot
+cd certbot
+wget https://dl.eff.org/certbot-auto
+ls -la
+chmod a+x certbot-auto
+ls -la
+clear
+./certbot-auto certonly --standalone -d engr101lab.org
+sudo ufw status
+sudo ufw deny 80
+sudo ufw status
+```
 
 Certbot saved the SSL cert in
 
@@ -62,77 +127,23 @@ Certbot saved the SSL cert in
 ## Save History
 
 ```
-sudo apt-get -y update && sudo apt-get -y upgrade
-clear
-cd /tmp
-pwd
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-ls
-clear
-ls
-sudo bash Miniconda3-latest-Linux-x86_64.sh
-cd ~
-ls -la
-source .bashrc
-python
-clear
-cd /opt
-ls
-ls -la
-sudo chmod -R g+w miniconda3/
-ls -la
-sudo chown -R root:peter miniconda3/
-ls -la
-conda --version
-cd ~
-clear
-conda create -y -n jupyterhubenv python=3.7
-conda activate jupyterhubenv
-clear
-conda install -y numpy matplotlib pandas xlrd scipy sympy jupyter notebook bokeh seaborn pyserial
-python
-clear
-conda install -y -c conda-forge pint altair jupyterlab
-clear
-conda install -y requests
-clear
-conda list
-clear
-conda install -y -c conda-forge jupyterhub
-python
-clear
-sudo ufw status
-sudo ufw allow 8000
-sudo ufw status
-clear
-jupyterhub --no-ssl
-clear
-sudo ufw status
-sudo ufw deny 8000
-sudo ufw status
-clear
-sudo ufw status
-sudo ufw allow 80
-sudo ufw status
-cd ~
-clear
-mkdir certbot
-cd certbot
-wget https://dl.eff.org/certbot-auto
-ls
-ls -la
-chmod a+x certbot-auto
-ls -la
-clear
-./certbot-auto certonly --standalone -d engr101lab.org
-sudo ufw status
-sudo ufw deny 80
-sudo ufw status
-
+cat ~/.bash_history
 ```
 
 ## Shut down server
 
+```
+sudo shutdown -h now
+```
+
 ## Add files to git, commit and push
+
+Locally, using the Anaconda Prompt:
+
+```
+git add .
+git commit -m "updates to contents.md in S01-E03"
+git push origin master
+```
 
 ## Review and Preview Next Episode
