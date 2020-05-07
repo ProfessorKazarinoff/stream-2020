@@ -1,4 +1,4 @@
-# S01-E04 Contents
+# S01-E05 Contents
 
 ## Who am I? Why am I doing this?
 
@@ -20,27 +20,21 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Review what we did last time
 
- - Routed our domain name to Linode name servers
- - Added an A record in Linode domains dashboard to link our domain name to our server IP address
- - Installed Miniconda, created conda env
- - Installed conda packages, JupyterHub
- - Ran JupyterHub in a very unsecure fashion
- - Aquired an SSL cert using Certbot
+ - Created files for security
+ - Installed and configured Nginx
+ - Ran JupyterHub as a System service
 
-## Create files for security
+## GitHub OAuth
 
- - proxy auth token
- - cookie secret
- - dhparams.pem
+ - GitHub app registration
+ - Install package for GitHub OAuth
+ - Customize JupyterHub config to use GitHub OAuth
 
-## Install nginx and configure
+## Google OAuth
 
- - install Nginx
- - create Nginx configuration (maybe mess around locally and move it with ftp)
-
-## JupyterHub as a system service
-
-## Test JupyterHub running in SSL with Nginx as a reverse proxy
+ - GitHub app registration
+ - Install package for GitHub OAuth
+ - Customize JupyterHub config to use GitHub OAuth
 
 ## Save History, Shut down server
 
