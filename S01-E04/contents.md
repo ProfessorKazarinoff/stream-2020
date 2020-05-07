@@ -29,6 +29,7 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Create files for security
 
+ - Note: run ```# starting S01-E04``` as first command. Put ```# generate proxy auth token``` before typing sets of commands
  - proxy auth token
  - cookie secret
  - dhparams.pem
