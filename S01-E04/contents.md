@@ -18,13 +18,17 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
  > https://professorkazarinoff.github.io/jupyterhub-ENGR114-2019Q4/
 
+## Start up the server and update
+
+ - Startup the server from the Digital Oceans Dashboard
+
 ## Review what we did last time
 
  - Routed our domain name to Linode name servers
- - Added an A record in Linode domains dashboard to link our domain name to our server IP address
- - Installed Miniconda, created conda env
- - Installed conda packages, JupyterHub
- - Ran JupyterHub in a very unsecure fashion
+ - Added an A record in the Linode domains dashboard to link our domain name to our server IP address
+ - Installed Miniconda, created a conda virtual environment
+ - Installed conda packages (NumPy, Pandas, etc), JupyterHub
+ - Ran JupyterHub in a very unsecure (no SSL, regular http) fashion
  - Aquired an SSL cert using Certbot
 
 ## Create files for security
@@ -37,9 +41,15 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 ## Install nginx and configure
 
  - install Nginx
- - create Nginx configuration (maybe mess around locally and move it with ftp)
+ - create Nginx configuration (maybe mess around locally and move it with ftp and FileZilla)
+
+## JupyterHub config to use cookie secret and proxy auth token
+
+ - ```jupyterhub_config.py``` file in ```/etc/jupyterhub/```
 
 ## JupyterHub as a system service
+
+ - systemd config file
 
 ## Test JupyterHub running in SSL with Nginx as a reverse proxy
 
