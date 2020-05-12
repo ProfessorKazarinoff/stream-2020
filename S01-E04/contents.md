@@ -33,12 +33,13 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Create files for security
 
+ - The JupyterHub docs state where to put certain files: https://jupyterhub.readthedocs.io/en/stable/installation-basics.html
  - Note: run ```# starting S01-E04``` as first command. Put ```# generate proxy auth token``` before typing sets of commands
  - proxy auth token
  - cookie secret
  - dhparams.pem
 
-## Install nginx and configure
+## Install Nginx and configure
 
  - install Nginx
  - create Nginx configuration (maybe mess around locally and move it with ftp and FileZilla)
