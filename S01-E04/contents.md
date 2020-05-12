@@ -42,7 +42,13 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 ## Install Nginx and configure
 
  - install Nginx
- - create Nginx configuration (maybe mess around locally and move it with ftp and FileZilla)
+ - create Nginx configuration (maybe mess around locally and move it with ftp and FileZilla) see: https://github.com/ProfessorKazarinoff/ansible-jupyterhub/blob/master/templates/sites-available.j2
+
+ - Link sites-available to sites-enabled
+
+```
+sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+```
 
 ## JupyterHub config to use cookie secret and proxy auth token
 
