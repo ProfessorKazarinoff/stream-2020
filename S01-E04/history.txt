@@ -1,0 +1,156 @@
+  164  # Start of S01-E04
+  165  clear
+  166  sudo apt-get -y update && sudo apt-get -y upgrade
+  167  clear
+  168  cd /srv
+  169  mkdir jupyterhub
+  170  sudo mkdir jupyterhub
+  171  cd jupyterhub
+  172  sudo touch jupyterhub_cookie_secret
+  173  sudo chown :sudo jupyterhub_cookie_secret
+  174  ls -la
+  175  clear
+  176  sudo chmod g+rw jupyterhub_cookie_secret
+  177  ls -la
+  178  clear
+  179  sudo openssl rand -hex 32 > jupyterhub_cookie_secret
+  180  ls -la
+  181  sudo chmod 600 jupyterhub_cookie_secret
+  182  ls -la
+  183  clear
+  184  # create proxy_auth_token
+  185  pwd
+  186  sudo touch proxy_auth_token
+  187  ls -la
+  188  sudo chown :sudo proxy_auth_token
+  189  ls -la
+  190  clear
+  191  sudo chmod g+rw proxy_auth_token
+  192  ls -la
+  193  sudo openssl rand -hex 32 > proxy_auth_token
+  194  ls -la
+  195  clear
+  196  sudo chmod 600 proxy_auth_token
+  197  ls -la
+  198  clear
+  199  # create dhparam.pem
+  200  pwd
+  201  sudo touch dhparam.pem
+  202  sudo chown :sudo dhparam.pem
+  203  sudo chmod g+rw dhparam.pem
+  204  sudo openssl dhparam -out /srv/jupyterhub/dhparam.pem 2048
+  205  clear
+  206  ls -la
+  207  sudo chmod 600 dhparam.pem
+  208  ls -la
+  209  clear
+  210  cd ~
+  211  # Nginx install and configuration
+  212  clear
+  213  sudo apt-get -y install nginx
+  214  clear
+  215  sudo ufw allow 'Nginx Full'
+  216  sudo ufw status
+  217  clear
+  218  sudo systemctl status nginx
+  219  clear
+  220  sudo ufw allow 80
+  221  sudo ufw status
+  222  clear
+  223  ufw deny 80
+  224  sudo ufw deny 80
+  225  sudo ufw status
+  226  clear
+  227  # configure nginx
+  228  clear
+  229  cd /etc/nginx
+  230  dir
+  231  ls
+  232  clear
+  233  ls
+  234  sudo nano nginx.conf
+  235  ls
+  236  cd sites-available
+  237  ls
+  238  default
+  239  sudo nano default
+  240  ls
+  241  cd ..
+  242  ls
+  243  cd sites-available/
+  244  ls
+  245  sudo rm default
+  246  ls
+  247  sudo ln -s /etc/nginx/sites-available/engr101lab.org /etc/nginx/sites-enabled/
+  248  clear
+  249  nginx -t
+  250  sudo nginx -t
+  251  cd ..
+  252  cd sites-enabled/
+  253  ls
+  254  ls -la
+  255  rm default
+  256  sudo rm default
+  257  ls
+  258  ls -la
+  259  sudo nginx -t
+  260  clear
+  261  sudo nginx -t
+  262  sudo systemctl stop nginx
+  263  sudo systemctl status nginx
+  264  clear
+  265  sudo systemctl start nginx
+  266  sudo systemctl status nginx
+  267  clear
+  268  # create jupyterhub_config.py
+  269  clear
+  270  cd /etc
+  271  mkdir jupyterhub
+  272  sudo mkdir jupyterhub
+  273  cd jupyterhub/
+  274  cd ..
+  275  ls -la
+  276  clear
+  277  sudo chown -R root:peter jupyterhub/
+  278  sudo chmod -R g+rwx jupyterhub/
+  279  ls -la
+  280  clear
+  281  conda activate jupyterhubenv
+  282  cd jupyterhub/
+  283  ls
+  284  jupyterhub --generate-config
+  285  ls
+  286  ls -la
+  287  ls
+  288  clear
+  289  jupyterhub
+  290  clear
+  291  # jupyterhub as a system service
+  292  cd /etc/systemd
+  293  ls
+  294  cd system
+  295  ls
+  296  clear
+  297  ls
+  298  clear
+  299  sudo systemctl daemon-reload
+  300  sudo systemctl start jupyterhub
+  301  sudo systemctl status jupyterhub
+  302  sudo systemclt status nginx
+  303  clear
+  304  sudo systemctl status nginx
+  305  clear
+  306  cd ~
+  307  ls
+  308  sudo systemclt stop jupyterhub
+  309  sudo systemctl stop jupyterhub
+  310  sudo systemctl status jupyterhub
+  311  clear
+  312  sudo systemctl stop nginx
+  313  sudo systemctl status nginx
+  314  clear
+  315  cat .bash_history
+  316  deactivate
+  317  conda deactivate
+  318  cat .bash_history
+  319  history

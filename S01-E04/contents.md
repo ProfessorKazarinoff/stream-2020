@@ -20,7 +20,7 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Start up the server and update
 
- - Startup the server from the Digital Oceans Dashboard
+ - Startup the server from the Linode Dashboard
 
 ## Review what we did last time
 
@@ -35,8 +35,9 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
  - The JupyterHub docs state where to put certain files: https://jupyterhub.readthedocs.io/en/stable/installation-basics.html
  - Note: run ```# starting S01-E04``` as first command. Put ```# generate proxy auth token``` before typing sets of commands
- - proxy auth token
+
  - cookie secret
+ - proxy auth token
  - dhparams.pem
 
 ## Install Nginx and configure
