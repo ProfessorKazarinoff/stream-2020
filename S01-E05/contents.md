@@ -22,6 +22,9 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
  - Created files for security
  - Installed and configured Nginx
+
+Note: Check https://ssl-config.mozilla.org/#server=nginx&version=1.17.7&config=intermediate&openssl=1.1.1d&guideline=5.4 to see how the nginx configuration compares
+
  - Ran JupyterHub as a System service
 
 ## GitHub OAuth
