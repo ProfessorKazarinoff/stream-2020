@@ -37,32 +37,130 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
  - Note: run ```# starting S01-E04``` as first command. Put ```# generate proxy auth token``` before typing sets of commands
 
  - cookie secret
+
+ ```
+ # create cookie secret
+cd /srv
+sudo mkdir jupyterhub
+cd jupyterhub
+sudo touch jupyterhub_cookie_secret
+sudo chown :sudo jupyterhub_cookie_secret
+sudo chmod g+rw jupyterhub_cookie_secret
+sudo openssl rand -hex 32 > jupyterhub_cookie_secret
+sudo chmod 600 jupyterhub_cookie_secret
+```
+
  - proxy auth token
+
+```
+# create proxy_auth_token
+pwd
+sudo touch proxy_auth_token
+sudo chown :sudo proxy_auth_token
+sudo chmod g+rw proxy_auth_token
+sudo openssl rand -hex 32 > proxy_auth_token
+sudo chmod 600 proxy_auth_token
+```
  - dhparams.pem
+
+```
+# create dhparam.pem
+pwd
+sudo touch dhparam.pem
+sudo chown :sudo dhparam.pem
+sudo chmod g+rw dhparam.pem
+sudo openssl dhparam -out /srv/jupyterhub/dhparam.pem 2048
+sudo chmod 600 dhparam.pem
+```
 
 ## Install Nginx and configure
 
  - install Nginx
+
+```
+# Nginx install
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx Full'
+sudo ufw status
+sudo systemctl status nginx
+```
+
  - create Nginx configuration (maybe mess around locally and move it with ftp and FileZilla) see: https://github.com/ProfessorKazarinoff/ansible-jupyterhub/blob/master/templates/sites-available.j2
 
  - Link sites-available to sites-enabled
 
 ```
-sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+# Nginx configuration
+cd /etc/nginx
+sudo nano nginx.conf
+cd sites-available
+sudo rm default
+sudo ln -s /etc/nginx/sites-available/engr101lab.org /etc/nginx/sites-enabled/
+sudo nginx -t
+cd sites-enabled/
+sudo rm default
+sudo nginx -t
+sudo systemctl stop nginx
+sudo systemctl status nginx
+sudo systemctl start nginx
+sudo systemctl status nginx
 ```
 
 ## JupyterHub config to use cookie secret and proxy auth token
 
  - ```jupyterhub_config.py``` file in ```/etc/jupyterhub/```
 
+```
+cd /etc
+sudo mkdir jupyterhub
+sudo chown -R root:peter jupyterhub/
+sudo chmod -R g+rwx jupyterhub/
+cd jupyterhub/
+conda activate jupyterhubenv
+jupyterhub --generate-config
+jupyterhub
+```
+
 ## JupyterHub as a system service
 
- - systemd config file
+ - systemd config file ```jupyterhub.service``` in ```/etc/systemd/system```
+
+```
+# jupyterhub as a system service
+cd /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl start jupyterhub
+sudo systemctl status jupyterhub
+sudo systemclt status nginx
+```
 
 ## Test JupyterHub running in SSL with Nginx as a reverse proxy
 
+Browse to:
+
+ > https://engr101lab.org
+
 ## Save History, Shut down server
 
+```
+# shut everything down
+sudo systemctl stop jupyterhub
+sudo systemctl status jupyterhub
+sudo systemctl stop nginx
+sudo systemctl status nginx
+sudo shutdown -h now
+```
+
+ - shut down server on the Linode dashboard
+
+
 ## Add files to git, commit and push
+
+```
+# locally
+git add .
+git commit -m "End of S01-E04"
+git push origin master
+```
 
 ## Review and Preview Next Episode

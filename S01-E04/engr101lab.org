@@ -1,3 +1,5 @@
+# /etc/nginx/sites-available/engr101lab.org
+
 server {
         listen 80;
         # !!! make sure to change this to your domain !!!
