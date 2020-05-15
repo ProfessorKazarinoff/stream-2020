@@ -27,6 +27,12 @@ Note: Check https://ssl-config.mozilla.org/#server=nginx&version=1.17.7&config=i
 
  - Ran JupyterHub as a System service
 
+## Log into server, change prompt
+
+```
+PS1="\u@jhserver: \w\n$ "
+```
+
 ## GitHub OAuth
 
  - GitHub app registration
