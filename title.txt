@@ -1,3 +1,5 @@
 JupyterHub Deployment
 
-S01-E04 SSL and Nginx
+S01-E05
+
+GitHub and Google OAuth
