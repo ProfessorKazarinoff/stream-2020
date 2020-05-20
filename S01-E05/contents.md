@@ -39,12 +39,6 @@ PS1="\u@jhserver: \w\n$ "
  - Install package for GitHub OAuth
  - Customize JupyterHub config to use GitHub OAuth
 
-## Google OAuth
-
- - GitHub app registration
- - Install package for GitHub OAuth
- - Customize JupyterHub config to use GitHub OAuth
-
 ## Save History, Shut down server
 
 ## Add files to git, commit and push
