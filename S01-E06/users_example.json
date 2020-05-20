@@ -1,0 +1,4 @@
+{
+    "users": ["peter","gabby"],
+    "admin_users": ["peter","peter.lastname"]
+}

@@ -155,3 +155,4 @@ ipython_config.py
 # GitHub Client Secrets
 S01-E05/github_oauth.json
 S01-E05/google_oauth_credentials.json
+S01-E05/college_id.json
