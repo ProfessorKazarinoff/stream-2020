@@ -1,5 +1,5 @@
 JupyterHub Deployment
 
-S01-E05
+S01-E06
 
-GitHub and Google OAuth
+Google OAuth
