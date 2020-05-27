@@ -1,5 +1,5 @@
 JupyterHub Deployment
 
-S01-E06
+S01-E07
 
-Google OAuth
+Custom Login Page

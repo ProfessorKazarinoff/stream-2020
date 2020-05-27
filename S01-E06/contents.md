@@ -38,8 +38,39 @@ PS1="\u@jhserver: \w\n$ "
 
 ## Cull Idle Servers Script
 
-## Save History, Shut down server
+The cull_idle_servers.py script shuts down user's servers when they have not used JupyterHub in a while. This opens up computational resources for other users that are actively using JupyterHub.
+
+ - copy the ```cull_idle_servers.py``` script to ```/etc/jupyterhub/```
+ - add a little configuration to ```jupyterhub_config.py```
+
+```
+import sys
+...
+
+c.JupyterHub.services = [
+        {
+            'name': 'cull-idle',
+            'admin': True,
+            'command': [sys.executable,
+                        '/etc/jupyterhub/cull_idle_servers.py',
+                        '--timeout=3000',
+                        '--url=http://127.0.0.1:8081/hub/api'
+                        ],
+        }
+    ]
+```
+
+
+## Shut down JupyterHub, Nginx, and the server.
 
 ## Add files to git, commit and push
+
+ - locally:
+
+```
+git add .
+git commit -m "end of S01-E06"
+git push origin master
+```
 
 ## Review and Preview Next Episode
