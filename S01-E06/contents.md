@@ -1,4 +1,4 @@
-# S01-E05 Contents
+# S01-E06 Contents
 
 ## Who am I? Why am I doing this?
 
@@ -20,12 +20,8 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Review what we did last time
 
- - Created files for security
- - Installed and configured Nginx
-
-Note: Check https://ssl-config.mozilla.org/#server=nginx&version=1.17.7&config=intermediate&openssl=1.1.1d&guideline=5.4 to see how the nginx configuration compares
-
- - Ran JupyterHub as a System service
+ - GitHub OAuth
+ - Can log in with GitHub usernames and passwords
 
 ## Log into server, change prompt
 
@@ -35,9 +31,10 @@ PS1="\u@jhserver: \w\n$ "
 
 ## Google OAuth
 
- - GitHub app registration
- - Install package for GitHub OAuth (already installed when we did GitHub OAuth)
- - Customize JupyterHub config to use GitHub OAuth (domains has to be a list, not a string)
+ - Google Developer Console
+ - Google OAuth credentials in json
+ - Modify ```jupyterhub_config.py```
+ - Log in with Google username and password
 
 ## Cull Idle Servers Script
 
