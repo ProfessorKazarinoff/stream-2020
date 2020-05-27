@@ -30,6 +30,10 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 PS1="\u@jhserver: \w\n$ "
 ```
 
+## User List from json file
+
+- Add regular and admin users from a json file
+
 ## Custom Login Page
 
 - Modify the HTML
