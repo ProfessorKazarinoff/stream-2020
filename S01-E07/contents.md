@@ -22,7 +22,7 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
  - Google OAuth
  - Can log in with Google usernames and passwords
- - cull_idle_servers script
+ - ```cull_idle_servers.py``` script
 
 ## Log into server, change prompt
 
@@ -34,11 +34,10 @@ PS1="\u@jhserver: \w\n$ "
 
 - Add regular and admin users from a json file
 
-## Custom Login Page
+## Custom Login Page?
 
 - Modify the HTML
 - View the login page
-
 
 ## Shut down JupyterHub, Nginx, and the server.
 

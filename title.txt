@@ -2,4 +2,4 @@ JupyterHub Deployment
 
 S01-E07
 
-Custom Login Page
+Users from json
