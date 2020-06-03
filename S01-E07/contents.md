@@ -52,3 +52,7 @@ git push origin master
 ```
 
 ## Review and Preview Next Episode
+
+In the episode next week:
+
+Use Ansible to deploy JupyterHub on Digital Ocean

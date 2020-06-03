@@ -152,7 +152,10 @@ ipython_config.py
 
 # End of https://www.gitignore.io/api/jupyternotebooks
 
-# GitHub Client Secrets
+# GitHub and Google Client Secrets
 S01-E05/github_oauth.json
 S01-E05/google_oauth_credentials.json
+
+# Specific user or college information
 S01-E05/college_id.json
+S01-E07/users.json

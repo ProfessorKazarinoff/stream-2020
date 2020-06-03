@@ -1,0 +1,4 @@
+{
+    "users":["peter","kendra","toby"],
+    "admin_users":["peter","some.otheruser"]
+}
