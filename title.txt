@@ -1,5 +1,5 @@
 JupyterHub Deployment
 
-S01-E07
+S01-E08
 
-Users from json
+Ansible Automation
