@@ -27,7 +27,9 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## What is Ansible?
 
-## Add git submodule that contains the ansible playbooks
+## Add git submodule that contains the ansible playbooks. 
+
+Docs: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 ```
 git submodule add https://username/reponame submodule/path
