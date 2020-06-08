@@ -27,9 +27,23 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## What is Ansible?
 
+## Add git submodule that contains the ansible playbooks
+
+```
+git submodule add https://username/reponame submodule/path
+git submodule --init
+git submodule update --init --recursive
+```
+
 ## Installing Ansible
 
-## Ensure server is created, ensure domain name is linked to server
+```
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Ensure server is created, ensure domain name is linked to server. https://whatsmydns.net
 
 ## Copy hosts and default.yml variable files
 
