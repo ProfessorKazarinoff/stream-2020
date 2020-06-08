@@ -1,5 +1,7 @@
 # S01-E08 Contents
 
+## Digital Ocean, create a new droplet, link domain name to droplet
+
 ## Who am I? Why am I doing this?
 
  > Blog: https://pythonforundergradengineers.com/
@@ -20,15 +22,28 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Review what we did last time
 
- - put users and admin users names in a json file, auto load into JuyterHub config
- - customize the login page
+ - Put users and admin users names in a json file, auto load into JuyterHub config
+ - Cutomize the login page
 
 ## What is Ansible?
 
 ## Installing Ansible
 
-## Digital Ocean, create a new droplet
+## Ensure server is created, ensure domain name is linked to server
+
+## Copy hosts and default.yml variable files
+
+## Check server connection with ping
 
 ## Ansible Playbook to create a non-root sudo user, enable ufw and SSH
 
 ## Other Ansible Playbooks
+
+ - install miniconda
+ - install jupyterhub
+ - SSL cert
+ - Google OAuth
+
+# Shut down servers, delete servers, save locally, push up to GitHub
+
+# Wrap-up S01
