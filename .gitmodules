@@ -1,0 +1,3 @@
+[submodule "S01-E08/ansible"]
+	path = S01-E08/ansible
+	url = https://github.com/ProfessorKazarinoff/ansible-jupyterhub-digitalocean

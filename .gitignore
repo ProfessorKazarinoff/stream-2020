@@ -159,3 +159,6 @@ S01-E05/google_oauth_credentials.json
 # Specific user or college information
 S01-E05/college_id.json
 S01-E07/users.json
+S01-E08/venv/
+S01-E08/ansible/hosts
+S01-E08/ansible/vars/default.yml
