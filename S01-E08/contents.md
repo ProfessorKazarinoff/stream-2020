@@ -62,4 +62,18 @@ pip install -r requirements.txt
 
 # Shut down servers, delete servers, save locally, push up to GitHub
 
+```
+# in the submodule directory
+git add .
+git commit -m "adds"
+git push origin master
+```
+
+```
+# in the main repo
+git add .
+git commit -m "end of S01-E08"
+git push origin master
+```
+
 # Wrap-up S01
