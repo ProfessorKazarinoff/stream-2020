@@ -1,5 +1,5 @@
-JupyterHub Deployment
+Python Web Technologies
 
-S01-E08
+S02-E01
 
-Ansible Automation
+Deploy Voila App on Heroku
