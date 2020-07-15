@@ -1,3 +1,9 @@
 [submodule "S01-E08/ansible"]
 	path = S01-E08/ansible
 	url = https://github.com/ProfessorKazarinoff/ansible-jupyterhub-digitalocean
+[submodule "S02-E01/voila-app"]
+	path = S02-E01/voila-app
+	url = https://github.com/ProfessorKazarinoff/voila-app.git
+[submodule "S02-E01/One-dimensional-heroku"]
+	path = S02-E01/One-dimensional-heroku
+	url = https://github.com/ProfessorKazarinoff/One-dimensional-heroku.git
