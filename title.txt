@@ -1,5 +1,5 @@
 Python Web Technologies
 
-S02-E01
+S02-E02
 
-Deploy Voila App on Heroku
+Streamlit
