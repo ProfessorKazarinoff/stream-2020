@@ -1,4 +1,4 @@
-# S02-E02 Contents
+# S02-E03 Contents
 
 ## Who am I? Why am I doing this?
 
@@ -12,19 +12,22 @@
 
 Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/code-of-conduct/code_of_conduct.md
 
+
+## What is Zappa? Why are we using Zappa
+
+ > https://github.com/Miserlou/Zappa
+
 ## Blog Post
 
- > https://pythonforundergradengineers.com/streamlit-app-with-bokeh.html
+ > https://pythonforundergradengineers.com/deploy-serverless-web-app-aws-lambda-zappa.html
 
-## Streamlit
+## Virtual Environment
 
- > https://www.streamlit.io/
+## Simple Flask App
 
- > https://docs.streamlit.io/en/stable/
+## AWS Credentails
 
-## Write Streamlit App, Serve Locally
-
-## Deploy with Heroku
+## Deploy Zappa on AWS Lambda
 
 ## Conclusion
 
