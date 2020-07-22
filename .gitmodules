@@ -7,3 +7,6 @@
 [submodule "S02-E01/One-dimensional-heroku"]
 	path = S02-E01/One-dimensional-heroku
 	url = https://github.com/ProfessorKazarinoff/One-dimensional-heroku.git
+[submodule "S02-E02/mohrs_circle_streamlit"]
+	path = S02-E02/mohrs_circle_streamlit
+	url = https://github.com/ProfessorKazarinoff/mohrs_circle_streamlit.git
