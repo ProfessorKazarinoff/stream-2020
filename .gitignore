@@ -163,3 +163,6 @@ S01-E08/venv/
 S01-E08/ansible/hosts
 S01-E08/ansible/vars/default.yml
 S02-E02/venv/
+
+venv/
+utils/thumbnail.png
