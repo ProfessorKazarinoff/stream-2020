@@ -23,11 +23,33 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## Virtual Environment
 
+```
+cd ~/Documents
+mkdir zappa_app_flask
+cd zappa_app_flask
+python -m venv venv
+source venv/bin/activate
+python -m pip install flask zappa
+python -m pip freeze > requirements.txt
+```
+
 ## Simple Flask App
 
 ## AWS Credentails
 
+ - Create a group
+ - Attach inline policy to group
+ - Create a user and user to the group
+ - copy aws access key id and aws secret access key
+
 ## Deploy Zappa on AWS Lambda
+
+```
+zappa init
+zappa deploy dev
+# make changes to the app
+zappa update dev
+```
 
 ## Conclusion
 

@@ -10,3 +10,6 @@
 [submodule "S02-E02/mohrs_circle_streamlit"]
 	path = S02-E02/mohrs_circle_streamlit
 	url = https://github.com/ProfessorKazarinoff/mohrs_circle_streamlit.git
+[submodule "S02-E03/zappa_app_flask"]
+	path = S02-E03/zappa_app_flask
+	url = https://github.com/ProfessorKazarinoff/zappa_app_flask.git
