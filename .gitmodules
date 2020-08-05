@@ -13,3 +13,6 @@
 [submodule "S02-E03/zappa_app_flask"]
 	path = S02-E03/zappa_app_flask
 	url = https://github.com/ProfessorKazarinoff/zappa_app_flask.git
+[submodule "S02-E04/pelican-github-actions"]
+	path = S02-E04/pelican-github-actions
+	url = https://github.com/ProfessorKazarinoff/pelican-github-actions.git

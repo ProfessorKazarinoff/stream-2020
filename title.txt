@@ -2,4 +2,4 @@ Python Web Technologies
 
 S02-E04
 
-Pelican
+Pelican and GitHub Actions
