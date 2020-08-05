@@ -1,5 +1,5 @@
 Python Web Technologies
 
-S02-E04
+S02-E05
 
-Pelican and GitHub Actions
+Mkdocs and GitHub Actions
