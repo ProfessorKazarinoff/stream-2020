@@ -1,4 +1,4 @@
-# S02-04 Contents
+# S02-05 Contents
 
 ## Who am I? Why am I doing this?
 
@@ -13,25 +13,23 @@
 Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/code-of-conduct/code_of_conduct.md
 
 
-## What is Pelican? What are static sites
+## What is MkDocs? What are static sites? Why MkDocs and no Sphinx?
 
- > https://docs.getpelican.com/en/stable/
-
-## Python for Undergrad Engineers
-
- > https://pythonforundergradengineers.com/how-i-built-this-site-1.html
+ > https://www.mkdocs.org/
 
 ## Create a GitHub Repo
 
-## Pull Locally, Virtual Environment, Install Pelican
+## Pull Locally, Virtual Environment, Install MkDocs
 
-## Create a simple Pelican site, run locally
+## A simple MkDocs site, run locally
 
-## Add a theme, run locally
+## Apply the MkDocs Material theme
 
-## Deploy on GitHub pages
+## Deploy to GitHub Pages
 
-## Deploy with GitHub Actions
+## GitHub Actions to deploy to GitHub Pages
+
+## Automate Docs for JupyterHub Deployment with GitHub Actions
 
 ## Conclusion
 
