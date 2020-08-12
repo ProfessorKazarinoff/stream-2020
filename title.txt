@@ -1,5 +1,5 @@
 Python Web Technologies
 
-S02-E05
+S02-E06
 
-Mkdocs and GitHub Actions
+Django

@@ -17,19 +17,56 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
  > https://www.mkdocs.org/
 
-## Create a GitHub Repo
+## Create a GitHub Repo on GitHub.com
+
+Add a .gitignore file for Python and a LICENSE
 
 ## Pull Locally, Virtual Environment, Install MkDocs
 
+```
+mkdir mkdocs-github-pages
+cd mkdocs-github-pages
+git init
+git remote add origin https://github.com/ProfessorKazarinoff/mkdocs-github-pages.git
+git pull origin master
+```
+## Create a Virtual environment and install MkDocs
+
+```
+python -m venv venv
+source venv/bin/activate
+python -m pip install mkdocs mkdocs-material
+```
+
 ## A simple MkDocs site, run locally
+
+```
+mkdocs new .
+mkdocs build
+mkdocs serve
+```
 
 ## Apply the MkDocs Material theme
 
+After mkdocs-material is pip installed, add the theme name to mkdocs.yml
+
 ## Deploy to GitHub Pages
+
+```
+mkdocs gh-deploy
+```
 
 ## GitHub Actions to deploy to GitHub Pages
 
-## Automate Docs for JupyterHub Deployment with GitHub Actions
+Create a .github/workflows/ci.yml file
+
+## Add, commit and push. Watch the site change
+
+```
+git add .
+git commit -m "added page to Mkdocs site"
+git push origin master
+```
 
 ## Conclusion
 
