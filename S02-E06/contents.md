@@ -61,7 +61,7 @@ python manage.py runserver
 
 ## Bootstrap
 
-- Add bootstrap cdn
+- Add bootstrap cdn: https://getbootstrap.com/
 - Seperate template parts into blocks
 
 ## If time - Custom User Model, Create super user
