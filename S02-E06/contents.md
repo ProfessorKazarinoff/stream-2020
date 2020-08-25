@@ -15,11 +15,17 @@ Code of conduct: https://github.com/ProfessorKazarinoff/stream-2020/blob/master/
 
 ## What is Django?
 
- > https://www.mkdocs.org/
+ > https://docs.djangoproject.com/en/3.1/
+
+We'll sort of follow William Vincent's Django for Beginners Book:
+
+ > https://djangoforbeginners.com/hello-world/
 
 ## What are we trying to replicate and improve?
 
- > https://pcc.edu/engineering
+ > https://www.pcc.edu/programs/engineering/course-plan/
+
+ > https://www.pcc.edu/programs/engineering/course-plan/mechanical-engineering/
 
 ## Create a GitHub Repo on GitHub.com
 
@@ -56,7 +62,9 @@ python manage.py runserver
 ## Bootstrap
 
 - Add bootstrap cdn
-- Build out templates
+- Seperate template parts into blocks
+
+## If time - Custom User Model, Create super user
 
 ## Add, commit and push. Watch the site change
 
