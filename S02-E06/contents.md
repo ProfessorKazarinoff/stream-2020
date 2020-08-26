@@ -31,7 +31,7 @@ We'll sort of follow William Vincent's Django for Beginners Book:
 
 Add a .gitignore file for Python and a LICENSE
 
-## Pull Locally, Virtual Environment, Install Djanog
+## Pull Locally, Virtual Environment, Install Django
 
 ```
 mkdir college-transfer
@@ -54,8 +54,9 @@ python manage.py runserver
 
 ## Create Pages App and a home page
 
- - create app
- - urls
+ - create pages app
+ - project urls
+ - pages urls
  - views
  - templates
 
@@ -63,14 +64,13 @@ python manage.py runserver
 
 - Add bootstrap cdn: https://getbootstrap.com/
 - Seperate template parts into blocks
-
-## If time - Custom User Model, Create super user
+- Add custom css
 
 ## Add, commit and push. Watch the site change
 
 ```
 git add .
-git commit -m "added 3 pages"
+git commit -m "end of stream"
 git push origin master
 ```
 

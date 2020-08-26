@@ -19,3 +19,6 @@
 [submodule "S02-E05/mkdocs-github-pages"]
 	path = S02-E05/mkdocs-github-pages
 	url = https://github.com/ProfessorKazarinoff/mkdocs-github-pages.git
+[submodule "S02-E06/transfer-app"]
+	path = S02-E06/transfer-app
+	url = https://github.com/ProfessorKazarinoff/transfer-app.git

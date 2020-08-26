@@ -1,5 +1,5 @@
 Python Web Technologies
 
-S02-E06
+S02-E07
 
 Django
