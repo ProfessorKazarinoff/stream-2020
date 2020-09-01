@@ -61,6 +61,8 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
+## Add some data to the database using the Django Admin
+
 ## Stash the data from the database for use later
 
  > https://docs.djangoproject.com/en/3.1/howto/initial-data/

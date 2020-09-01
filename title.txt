@@ -2,4 +2,4 @@ Python Web Technologies
 
 S02-E07
 
-Django
+Django and Databases
