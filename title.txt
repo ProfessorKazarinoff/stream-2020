@@ -1,5 +1,5 @@
 Python Web Technologies
 
-S02-E07
+S02-E08
 
-Django and Databases
+Django Deployment

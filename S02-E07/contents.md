@@ -47,7 +47,7 @@ python manage.py runserver
  - Model
  - Admin
  - View
- - url
+ - urls
  - template
 
 ## Create a custom user model
@@ -77,4 +77,4 @@ git push origin master
 
 ## Conclusion
 
-That's all for today. Next week we'll explore how to deploy the Django Web App on Digital Ocean.
+That's all for today. Next week we'll explore how to deploy the Django Web App on Digital Ocean. That will finish up Season 02!

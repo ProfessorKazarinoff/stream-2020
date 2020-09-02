@@ -22,3 +22,6 @@
 [submodule "S02-E06/transfer-app"]
 	path = S02-E06/transfer-app
 	url = https://github.com/ProfessorKazarinoff/transfer-app.git
+[submodule "S02-E07/transfer-app"]
+	path = S02-E07/transfer-app
+	url = https://github.com/ProfessorKazarinoff/transfer-app.git
