@@ -58,6 +58,8 @@ git push origin master
 
 #### Docs
 
+ > https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
+
  > https://devcenter.heroku.com/articles/deploying-python
 
  > https://devcenter.heroku.com/categories/working-with-django
@@ -95,6 +97,14 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 ```
+
+#### Secrets
+
+```
+https://devcenter.heroku.com/articles/config-vars#setting-up-config-vars-for-a-deployed-application
+```
+
+Use environment variables locally and add to settings.py
 
 #### Add, commit, push
 
